@@ -1,78 +1,72 @@
-# InturnAI
-🧠 🔍 What is it?
-A personal AI agent that acts like your smart intern.
-You give it high-level tasks, and it:
+# 🤖 InturnAI – Your Personal AI Intern Agent
 
-Breaks them down
+> 🚀 An intelligent, task-oriented AI assistant that acts like your **virtual intern** – planning, researching, coding, writing, and reporting tasks just like a human assistant. Designed to boost productivity and showcase advanced AI agent orchestration.
 
-Researches
+---
 
-Writes code, documents
+## 📌 Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Demo](#demo)
+- [Tech Stack](#tech-stack)
+- [Architecture](#architecture)
+- [How It Works](#how-it-works)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Future Roadmap](#future-roadmap)
+- [Contributing](#contributing)
+- [License](#license)
 
-Updates you with reports
+---
 
-Think of it as your:
+## 🧠 Overview
 
-Research assistant
+**InturnAI** is a cutting-edge AI agent built to function as a **personal intern** capable of executing high-level tasks by breaking them down into actionable steps, completing each subtask using AI tools (e.g., LLMs, scrapers, coders), and returning structured, formatted output.
 
-Coding buddy
+Designed as a personal productivity enhancer and a showcase of LLMs, LangChain agents, and full-stack AI integration – it’s ideal for job-seekers, students, developers, or anyone who wants a **hands-free research or coding companion**.
 
-Email summarizer
+---
 
-To-do planner
+## 🚀 Features
 
-Knowledge fetcher
+- 🧠 **Intelligent Task Breakdown** – Converts high-level tasks into sub-tasks using LLMs
+- 🔍 **Research Assistant** – Summarizes articles and scrapes useful data
+- 💻 **Code Writer & Debugger** – Writes and explains Python code from prompts
+- 🗓️ **Planner & Organizer** – Plans weekly tasks or project timelines
+- 📄 **Report Generator** – Outputs structured reports in PDF/HTML/Markdown
+- 🧰 **Modular Agents** – Each tool is a plug-and-play “worker” (e.g., coder, summarizer)
 
-🔧 Example Use Cases
-Command You Give	What the AI Does
-“Build me a roadmap for MAANG roles”	Breaks it into steps, suggests tools/resources
-“Make a report on Indian startups in AI”	Scrapes data, summarizes articles, creates PDF
-“Write me Python code for stock prediction”	Finds logic, writes + explains the code
-“Organize my tasks for this week”	Creates plan, integrates with Google Calendar
+---
 
-🏗️ Suggested Architecture
-🧠 Core Components
-Command Processor – understands what you asked
+## 📸 Demo
 
-Task Planner – breaks task into subtasks
+Coming soon! (or add link here once deployed)
 
-Worker Modules – web scraping, coding, summarization, calendar integration
+---
 
-Memory Module – stores past interactions (can use vector DB like Pinecone)
+## 🛠 Tech Stack
 
-🔨 Tech Stack
-Layer	Tools
-Frontend	React + Tailwind
-Backend	FastAPI / Flask / Node.js
-AI Models	OpenAI (GPT-4), LangChain, LlamaIndex
-Memory	Pinecone / Chroma DB
-Tasks/Agents	LangGraph or AutoGPT-like flows
-Tools	SerpAPI, GitHub API, Google API
+| Layer        | Tech Used                            |
+|--------------|--------------------------------------|
+| 🧠 AI Models | OpenAI GPT-4 / GPT-3.5, LangChain     |
+| 🔗 Framework | LangChain, FastAPI                   |
+| 🧠 Memory     | Pinecone (Vector DB) / Chroma        |
+| 📦 Backend   | FastAPI / Flask / Node.js (choose one)|
+| 🖥 Frontend  | React.js + Tailwind CSS               |
+| 🗃 Database  | MongoDB / PostgreSQL (optional)       |
+| 🔌 APIs      | Google Search API, GitHub API         |
 
-💡 MVP Features
-Chat interface to assign tasks
+---
 
-Task breakdown engine
+## 🧱 Architecture
 
-Basic tools: web search, summarizer, coder, scheduler
-
-Report builder: combines output into a beautiful PDF/HTML
-
-🚀 Advanced Add-ons (after MVP)
-Voice command input
-
-Browser plugin
-
-Self-learning from your interactions
-
-Collaborate with multiple agents (like a team of interns!)
-
-📈 Why this shocks recruiters:
-It's real-world useful
-
-Showcases multi-agent systems + LLM chaining
-
-Combines frontend/backend/AI—all in one
-
-Unique + trending 🔥
-
+```txt
++-------------+       +-----------------+       +---------------+
+|   User UI   | <---> | Command Parser  | <---> |   LangChain   |
++-------------+       +-----------------+       +---------------+
+                                              ↙         ↓        ↘
+                                    [Task Planner]   [Memory]   [Worker Agents]
+                                              ↘         ↓        ↙
+                                       +------------------------+
+                                       | Output Formatter / UI  |
+                                       +------------------------+
