@@ -40,7 +40,7 @@ Designed as a personal productivity enhancer and a showcase of LLMs, LangChain a
 
 ## 📸 Demo
 
-Coming soon! (or add link here once deployed)
+Coming soon! 
 
 ---
 
